@@ -1,0 +1,54 @@
+% for lualatex
+
+\documentclass{book}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Extension=.otf,UprightFont=*-regular,ItalicFont=*-italic,BoldFont=*-bold,BoldItalicFont=*-bolditalic]{texgyretermes}
+\setsansfont[Extension=.otf,UprightFont=*-regular,ItalicFont=*-italic,BoldFont=*-bold,BoldItalicFont=*-bolditalic]{texgyreadventor}
+\setmathfont{xits-math.otf}
+
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage[english,finnish]{babel}
+
+\begin{document}
+
+\title{Esimerkki}
+\author{Kirjoittaja}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+\chapter{Luku}
+
+\section{Osio}
+
+\subsection{Alaosio}
+
+\Blindtext
+
+\chapter{Uusi luku}
+
+\section{Uusi osio}
+
+\subsection{Uusi alaosio}
+
+\[
+x^3 + 4x + 7 = 6x^2 - x + \sqrt[4]{2}
+\]
+
+\[
+x^{12}
+\]
+
+\[
+x^{\frac{1}{4}} \cdot x^{\frac{3}{4}} = x
+\]
+
+\subsection{Vielä alaosio}
+
+Esimerkki: $\log x = 5$
+
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass{beamer}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cmap}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Extension=.otf,UprightFont=*-regular,ItalicFont=*-italic,BoldFont=*-bold,BoldItalicFont=*-bolditalic]{texgyretermes}
+\setsansfont[Extension=.otf,UprightFont=*-regular,ItalicFont=*-italic,BoldFont=*-bold,BoldItalicFont=*-bolditalic]{texgyreadventor}
+\setmathfont{xits-math.otf}
+\usepackage[protrusion=true,expansion=true,verbose=true]{microtype}
+
+\usetheme{Berkeley}
+\usecolortheme{crane}
+
+\title[LaTeX]{LaTeX: a crash course}
+\author{Niko Ilomäki}
+\institute{Matematiikan yö k2014}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{LaTeX (1)}
+LaTeX...
+\begin{itemize}
+\pause \item is a document preparation system.
+\pause \item offers high-quality typesetting % industry standard
+\pause \item differs a lot from e.g. Microsoft Word.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{LaTeX (2)}
+LaTeX...
+\begin{itemize}
+\pause \item separates content and structure to some extent. % compare to XML
+\pause \item is based on an earlier system, TeX.
+\pause \item is still developed.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{LaTeX compilers}
+There are several LaTeX compilers. We'll focus on the ones that compile .tex to .pdf.
+\begin{itemize}
+\pause \item pdflatex
+\pause \item xelatex
+\pause \item lualatex
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Writing math with LaTeX}
+Math can be written in several modes in LaTeX. The most common ones are:
+\begin{itemize}
+\pause \item Inline mode: \$..\$ or \textbackslash(..\textbackslash)
+\pause \item Display mode: \textbackslash[..\textbackslash] (not recommended: \$\$ .. \$\$)
+\pause \item Align mode: \textbackslash begin\{align*\} .. \textbackslash end\{align*\}
+\end{itemize}
+\end{frame}
+
+\end{document}
