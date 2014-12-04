@@ -1,0 +1,50 @@
+\documentclass[reprint,aip]{revtex4-1}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{easylist}
+%\usepackage{setspace}
+%\onehalfspacing
+
+%% SUOMEKSI
+\usepackage[english,finnish]{babel}
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{finnish}
+\makeatletter
+\renewcommand*\frontmatter@date[2][Päiväys: ]{\def\@date{#1#2}}%
+\let\date\frontmatter@date%
+\makeatother
+%% SUOMEKSI
+
+%% ENGLANNIKSI
+%\usepackage[finnish,english]{babel}
+%\usepackage[fixlanguage]{babelbib}
+%\selectbiblanguage{english}
+%% ENGLANNIKSI
+
+\begin{document}
+
+\title{otsikko}
+\date{\today}
+\author{kirjoittaja}
+\email[]{sposti}
+%\homepage[]{kotisivu}
+%\thanks{}
+\affiliation{yliopisto tai esim. opiskelijanumero}
+%\altaffiliation[]{}
+%\noaffiliation
+
+%\begin{abstract}
+% tiivistelmä
+%\end{abstract}
+
+\maketitle
+
+% tekstin runko
+
+%\bibliographystyle{babalpha}
+%\bibliography{bibliography}
+
+\end{document}
